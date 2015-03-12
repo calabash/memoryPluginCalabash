@@ -17,7 +17,7 @@ args =
             '-configuration Debug',
             '-derivedDataPath build',
             'SYMROOT=build',
-            "SDKROOT=#{sdk}",
+            "-sdk #{sdk}",
             "ARCHS=\"armv7 armv7s arm64\"",
             "VALID_ARCHS=\"armv7 armv7s arm64\"",
             "ONLY_ACTIVE_ARCH=NO",
