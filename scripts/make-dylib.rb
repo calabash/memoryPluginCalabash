@@ -20,5 +20,4 @@ args =
             xcpretty_available ? '| xcpretty -c' : ''
       ].join(' ')
 
-system "xcrun xcodebuild #{args}"
-exit $?.exitstatus
+exec "xcrun xcodebuild #{args}"
