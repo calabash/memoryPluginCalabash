@@ -7,8 +7,8 @@
 //
 #import "XAMemoryPluginCalabash.h"
 
-@implementation XAMemoryPluginCalabash {
-}
+@implementation XAMemoryPluginCalabash
+
 +(void)load {
   [[XAMemoryPluginCalabash sharedInstance] setupNotifications];
 }

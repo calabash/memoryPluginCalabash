@@ -12,7 +12,6 @@
 
 @interface XAMemoryPluginCalabash : NSObject
 
-
-+ (XAMemoryPluginCalabash *)sharedInstance;
++ (void)load;
 
 @end
