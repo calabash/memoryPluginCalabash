@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10FA36019BEC29E00E82282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FA35F19BEC29E00E82282 /* UIKit.framework */; };
+		B10FA36119BEC2A900E82282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FA33319BEC0EE00E82282 /* Foundation.framework */; };
+		B172EFB61AB114430019A6FB /* XAMemoryPluginCalabash.h in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */; };
+		B172EFB71AB114430019A6FB /* XAMemoryPluginCalabash.m in Sources */ = {isa = PBXBuildFile; fileRef = B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */; };
+		B172EFB91AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10FA32D19BEC0EE00E82282 /* memoryPluginCalabash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = memoryPluginCalabash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10FA33319BEC0EE00E82282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B10FA35F19BEC29E00E82282 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAMemoryPluginCalabash.h; sourceTree = "<group>"; };
+		B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAMemoryPluginCalabash.m; sourceTree = "<group>"; };
+		B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MemoryCalabashPlugin-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10FA32A19BEC0EE00E82282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10FA36119BEC2A900E82282 /* Foundation.framework in Frameworks */,
+				B10FA36019BEC29E00E82282 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10FA32419BEC0EE00E82282 = {
+			isa = PBXGroup;
+			children = (
+				B172EFAD1AB114430019A6FB /* memoryPluginCalabash */,
+				B10FA32F19BEC0EE00E82282 /* Frameworks */,
+				B10FA32E19BEC0EE00E82282 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B10FA32E19BEC0EE00E82282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10FA32D19BEC0EE00E82282 /* memoryPluginCalabash.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B10FA32F19BEC0EE00E82282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B10FA35F19BEC29E00E82282 /* UIKit.framework */,
+				B10FA33219BEC0EE00E82282 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B10FA33219BEC0EE00E82282 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B10FA33319BEC0EE00E82282 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B172EFAD1AB114430019A6FB /* memoryPluginCalabash */ = {
+			isa = PBXGroup;
+			children = (
+				B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */,
+				B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */,
+				B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */,
+			);
+			name = memoryPluginCalabash;
+			path = memoryCalabashPlugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B10FA32B19BEC0EE00E82282 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172EFB91AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch in Headers */,
+				B172EFB61AB114430019A6FB /* XAMemoryPluginCalabash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B10FA32C19BEC0EE00E82282 /* memoryPluginCalabash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabash" */;
+			buildPhases = (
+				B10FA32919BEC0EE00E82282 /* Sources */,
+				B10FA32A19BEC0EE00E82282 /* Frameworks */,
+				B10FA32B19BEC0EE00E82282 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memoryPluginCalabash;
+			productName = XamCast;
+			productReference = B10FA32D19BEC0EE00E82282 /* memoryPluginCalabash.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10FA32519BEC0EE00E82282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Karl Krukow";
+			};
+			buildConfigurationList = B10FA32819BEC0EE00E82282 /* Build configuration list for PBXProject "memoryPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B10FA32419BEC0EE00E82282;
+			productRefGroup = B10FA32E19BEC0EE00E82282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B10FA32C19BEC0EE00E82282 /* memoryPluginCalabash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10FA32919BEC0EE00E82282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172EFB71AB114430019A6FB /* XAMemoryPluginCalabash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10FA34F19BEC0EE00E82282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Krukow (6GF49ATP5N)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = libXamCastDyn;
+				PROVISIONING_PROFILE = "09e88607-43c6-4cdb-ac60-d198c99d4bae";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B10FA35019BEC0EE00E82282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Krukow (6GF49ATP5N)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = libXamCastDyn;
+				PROVISIONING_PROFILE = "09e88607-43c6-4cdb-ac60-d198c99d4bae";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B10FA35219BEC0EE00E82282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memoryCalabashPlugin/MemoryCalabashPlugin-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B10FA35319BEC0EE00E82282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memoryCalabashPlugin/MemoryCalabashPlugin-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10FA32819BEC0EE00E82282 /* Build configuration list for PBXProject "memoryPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10FA34F19BEC0EE00E82282 /* Debug */,
+				B10FA35019BEC0EE00E82282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10FA35219BEC0EE00E82282 /* Debug */,
+				B10FA35319BEC0EE00E82282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B10FA32519BEC0EE00E82282 /* Project object */;
+}
