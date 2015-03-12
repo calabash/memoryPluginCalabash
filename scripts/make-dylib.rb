@@ -13,7 +13,9 @@ FileUtils.mkdir_p "./build/Debug-#{sdk}"
 args =
       [
             "-target \"#{target_arg}\"",
+            "-scheme \"#{target_arg}\"",
             '-configuration Debug',
+            '-derivedDataPath build',
             'SYMROOT=build',
             "SDKROOT=#{sdk}",
             "ARCHS=\"armv7 armv7s arm64\"",
