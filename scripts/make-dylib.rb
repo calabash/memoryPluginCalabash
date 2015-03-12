@@ -17,7 +17,7 @@ args =
             'SYMROOT=build',
             "SDKROOT=#{sdk}",
             'IPHONEOS_DEPLOYMENT_TARGET=5.1.1',
-            xcpretty_available ? '| xcpretty -c' : ''
+            xcpretty_available ? '| xcpretty -c && exit ${PIPESTATUS[0]}' : ''
       ].join(' ')
 
 exec "xcrun xcodebuild #{args}"
