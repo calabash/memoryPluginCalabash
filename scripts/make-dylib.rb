@@ -16,6 +16,9 @@ args =
             '-configuration Debug',
             'SYMROOT=build',
             "SDKROOT=#{sdk}",
+            "ARCHS=\"armv7 armv7s arm64\"",
+            "VALID_ARCHS=\"armv7 armv7s arm64\"",
+            "ONLY_ACTIVE_ARCH=NO",
             'IPHONEOS_DEPLOYMENT_TARGET=5.1.1',
             xcpretty_available ? '| xcpretty -c && exit ${PIPESTATUS[0]}' : ''
       ].join(' ')
