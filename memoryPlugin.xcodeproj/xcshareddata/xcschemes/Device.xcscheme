@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B10FA32C19BEC0EE00E82282"
-               BuildableName = "memoryPluginCalabash.dylib"
-               BlueprintName = "memoryPluginCalabash"
+               BuildableName = "memoryPluginCalabashDevice.dylib"
+               BlueprintName = "memoryPluginCalabashDevice"
                ReferencedContainer = "container:memoryPlugin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B10FA32C19BEC0EE00E82282"
-            BuildableName = "memoryPluginCalabash.dylib"
-            BlueprintName = "memoryPluginCalabash"
+            BuildableName = "memoryPluginCalabashDevice.dylib"
+            BlueprintName = "memoryPluginCalabashDevice"
             ReferencedContainer = "container:memoryPlugin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B10FA32C19BEC0EE00E82282"
-            BuildableName = "memoryPluginCalabash.dylib"
-            BlueprintName = "memoryPluginCalabash"
+            BuildableName = "memoryPluginCalabashDevice.dylib"
+            BlueprintName = "memoryPluginCalabashDevice"
             ReferencedContainer = "container:memoryPlugin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

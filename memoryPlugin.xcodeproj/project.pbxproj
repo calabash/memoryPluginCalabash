@@ -12,6 +12,11 @@
 		B172EFB61AB114430019A6FB /* XAMemoryPluginCalabash.h in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */; };
 		B172EFB71AB114430019A6FB /* XAMemoryPluginCalabash.m in Sources */ = {isa = PBXBuildFile; fileRef = B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */; };
 		B172EFB91AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */; };
+		F5A33A2A1ABF9C5400224639 /* XAMemoryPluginCalabash.m in Sources */ = {isa = PBXBuildFile; fileRef = B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */; };
+		F5A33A2C1ABF9C5400224639 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FA33319BEC0EE00E82282 /* Foundation.framework */; };
+		F5A33A2D1ABF9C5400224639 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FA35F19BEC29E00E82282 /* UIKit.framework */; };
+		F5A33A2F1ABF9C5400224639 /* MemoryCalabashPlugin-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */; };
+		F5A33A301ABF9C5400224639 /* XAMemoryPluginCalabash.h in Headers */ = {isa = PBXBuildFile; fileRef = B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,7 @@
 		B172EFB01AB114430019A6FB /* XAMemoryPluginCalabash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAMemoryPluginCalabash.h; sourceTree = "<group>"; };
 		B172EFB11AB114430019A6FB /* XAMemoryPluginCalabash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAMemoryPluginCalabash.m; sourceTree = "<group>"; };
 		B172EFB21AB114430019A6FB /* MemoryCalabashPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MemoryCalabashPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		F5A33A341ABF9C5400224639 /* memoryPluginCalabashSim.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = memoryPluginCalabashSim.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,15 @@
 			files = (
 				B10FA36119BEC2A900E82282 /* Foundation.framework in Frameworks */,
 				B10FA36019BEC29E00E82282 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A33A2B1ABF9C5400224639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A33A2C1ABF9C5400224639 /* Foundation.framework in Frameworks */,
+				F5A33A2D1ABF9C5400224639 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B10FA32D19BEC0EE00E82282 /* memoryPluginCalabash.dylib */,
+				F5A33A341ABF9C5400224639 /* memoryPluginCalabashSim.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,12 +109,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5A33A2E1ABF9C5400224639 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A33A2F1ABF9C5400224639 /* MemoryCalabashPlugin-Prefix.pch in Headers */,
+				F5A33A301ABF9C5400224639 /* XAMemoryPluginCalabash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B10FA32C19BEC0EE00E82282 /* memoryPluginCalabash */ = {
+		B10FA32C19BEC0EE00E82282 /* memoryPluginCalabashDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabash" */;
+			buildConfigurationList = B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabashDevice" */;
 			buildPhases = (
 				B10FA32919BEC0EE00E82282 /* Sources */,
 				B10FA32A19BEC0EE00E82282 /* Frameworks */,
@@ -108,9 +133,26 @@
 			);
 			dependencies = (
 			);
-			name = memoryPluginCalabash;
+			name = memoryPluginCalabashDevice;
 			productName = XamCast;
 			productReference = B10FA32D19BEC0EE00E82282 /* memoryPluginCalabash.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		F5A33A281ABF9C5400224639 /* memoryPluginCalabashSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A33A311ABF9C5400224639 /* Build configuration list for PBXNativeTarget "memoryPluginCalabashSim" */;
+			buildPhases = (
+				F5A33A291ABF9C5400224639 /* Sources */,
+				F5A33A2B1ABF9C5400224639 /* Frameworks */,
+				F5A33A2E1ABF9C5400224639 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memoryPluginCalabashSim;
+			productName = XamCast;
+			productReference = F5A33A341ABF9C5400224639 /* memoryPluginCalabashSim.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +177,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B10FA32C19BEC0EE00E82282 /* memoryPluginCalabash */,
+				B10FA32C19BEC0EE00E82282 /* memoryPluginCalabashDevice */,
+				F5A33A281ABF9C5400224639 /* memoryPluginCalabashSim */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B172EFB71AB114430019A6FB /* XAMemoryPluginCalabash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A33A291ABF9C5400224639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A33A2A1ABF9C5400224639 /* XAMemoryPluginCalabash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +307,34 @@
 			};
 			name = Release;
 		};
+		F5A33A321ABF9C5400224639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memoryCalabashPlugin/MemoryCalabashPlugin-Prefix.pch";
+				PRODUCT_NAME = memoryPluginCalabashSim;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphonesimulator;
+			};
+			name = Debug;
+		};
+		F5A33A331ABF9C5400224639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memoryCalabashPlugin/MemoryCalabashPlugin-Prefix.pch";
+				PRODUCT_NAME = memoryPluginCalabashSim;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphonesimulator;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,11 +347,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabash" */ = {
+		B10FA35119BEC0EE00E82282 /* Build configuration list for PBXNativeTarget "memoryPluginCalabashDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B10FA35219BEC0EE00E82282 /* Debug */,
 				B10FA35319BEC0EE00E82282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A33A311ABF9C5400224639 /* Build configuration list for PBXNativeTarget "memoryPluginCalabashSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A33A321ABF9C5400224639 /* Debug */,
+				F5A33A331ABF9C5400224639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
