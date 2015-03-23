@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
 @interface XAMemoryPluginCalabash : NSObject
 
-
-+ (XAMemoryPluginCalabash *)sharedInstance;
++ (void)load;
 
 @end
