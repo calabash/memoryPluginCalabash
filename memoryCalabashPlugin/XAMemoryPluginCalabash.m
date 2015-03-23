@@ -31,7 +31,6 @@
   self = [super init];
   if (self) {
   }
-  NSLog(@"good");
   return self;
 }
 
