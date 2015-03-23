@@ -20,7 +20,7 @@ args =
             "-sdk #{sdk}",
             "ARCHS=\"armv7 armv7s arm64\"",
             "VALID_ARCHS=\"armv7 armv7s arm64\"",
-            "ONLY_ACTIVE_ARCH=NO",
+            'ONLY_ACTIVE_ARCH=NO',
             xcpretty_available ? '| xcpretty -c && exit ${PIPESTATUS[0]}' : ''
       ].join(' ')
 
