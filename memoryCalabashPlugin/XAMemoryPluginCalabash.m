@@ -1,13 +1,11 @@
 //
-//  SRScreenRecorder.m
-//  ScreenRecorder
+//  XAMemoryPluginCalabash.h
+//  XAMemoryPluginCalabash
 //
-//  Created by kishikawa katsumi on 2012/12/26.
-//  Copyright (c) 2012年 kishikawa katsumi. All rights reserved.
+//  Created by Karl Krukow on 2014/03/11.
+//  Copyright (c) 2014 Xamarin Inc. All rights reserved.
 //
-
 #import "XAMemoryPluginCalabash.h"
-
 
 @implementation XAMemoryPluginCalabash {
 }
