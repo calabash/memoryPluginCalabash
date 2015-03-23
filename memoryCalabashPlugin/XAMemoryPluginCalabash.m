@@ -11,7 +11,9 @@
 @implementation XAMemoryPluginCalabash
 
 +(void)load {
+  NSLog(@"Calabash Memory Plugin: loading...");
   [[XAMemoryPluginCalabash sharedInstance] setupNotifications];
+  NSLog(@"Calabash Memory Plugin: registered for low-memory warnings");
 }
 
 + (XAMemoryPluginCalabash *)sharedInstance
