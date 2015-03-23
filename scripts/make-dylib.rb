@@ -13,12 +13,15 @@ FileUtils.mkdir_p "./build/Debug-#{sdk}"
 args =
       [
             "-target \"#{target_arg}\"",
+            "-scheme \"#{target_arg}\"",
             '-configuration Debug',
+            '-derivedDataPath build',
             'SYMROOT=build',
-            "SDKROOT=#{sdk}",
-            'IPHONEOS_DEPLOYMENT_TARGET=5.1.1',
-            xcpretty_available ? '| xcpretty -c' : ''
+            "-sdk #{sdk}",
+            "ARCHS=\"armv7 armv7s arm64\"",
+            "VALID_ARCHS=\"armv7 armv7s arm64\"",
+            "ONLY_ACTIVE_ARCH=NO",
+            xcpretty_available ? '| xcpretty -c && exit ${PIPESTATUS[0]}' : ''
       ].join(' ')
 
-system "xcrun xcodebuild #{args}"
-exit $?.exitstatus
+exec "xcrun xcodebuild #{args}"
