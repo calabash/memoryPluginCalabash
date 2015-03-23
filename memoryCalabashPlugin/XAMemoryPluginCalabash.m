@@ -5,6 +5,7 @@
 //  Created by Karl Krukow on 2014/03/11.
 //  Copyright (c) 2014 Xamarin Inc. All rights reserved.
 //
+
 #import "XAMemoryPluginCalabash.h"
 
 @implementation XAMemoryPluginCalabash
@@ -15,33 +16,36 @@
 
 + (XAMemoryPluginCalabash *)sharedInstance
 {
-    static XAMemoryPluginCalabash *sharedInstance = nil;
-    static dispatch_once_t pred;
-    dispatch_once(&pred, ^{
-        sharedInstance = [[XAMemoryPluginCalabash alloc] init];
-    });
-    return sharedInstance;
+  static XAMemoryPluginCalabash *sharedInstance = nil;
+  static dispatch_once_t pred;
+  dispatch_once(&pred, ^{
+    sharedInstance = [[XAMemoryPluginCalabash alloc] init];
+  });
+  return sharedInstance;
 }
 
 - (id)init
 {
-    self = [super init];
-    if (self) {
-    }
+  self = [super init];
+  if (self) {
+  }
   NSLog(@"good");
-    return self;
+  return self;
 }
 
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)setupNotifications
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidReceiveMemoryWarning:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+  [[NSNotificationCenter defaultCenter]
+   addObserver:self
+   selector:@selector(applicationDidReceiveMemoryWarning:)
+   name:UIApplicationDidReceiveMemoryWarningNotification
+   object:nil];
 }
-
 
 - (void)applicationDidReceiveMemoryWarning:(NSNotification *)notification
 {
