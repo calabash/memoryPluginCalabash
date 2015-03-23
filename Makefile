@@ -1,10 +1,10 @@
 all:
-	$(MAKE) dylibs
+	$(MAKE) dylib
+
 clean:
 	rm -rf build
-	rm -rf dylibs
+	rm -f memoryPluginCalabash.dylib
 
-dylibs:
-	rm -rf build
-	rm -rf dylibs
+dylib:
+	$(MAKE) clean
 	scripts/make-dylib.rb
